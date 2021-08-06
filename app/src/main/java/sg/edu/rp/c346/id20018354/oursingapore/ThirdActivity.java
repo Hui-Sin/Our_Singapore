@@ -43,7 +43,7 @@ public class ThirdActivity extends AppCompatActivity {
         Intent i = getIntent();
         final Island currentIsland = (Island) i.getSerializableExtra("island");
 
-        etID.setText(valueOf(currentIsland.getId()));
+        etID.setText(String.valueOf(currentIsland.getId()));
         etName.setText(currentIsland.getName());
         etDescription.setText(currentIsland.getDescription());
         etArea.setText(valueOf(currentIsland.getArea()));
